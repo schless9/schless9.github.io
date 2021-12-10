@@ -1,0 +1,15 @@
+h1,h3 {
+   text-align: center;
+}
+
+.chart-container {
+  position: relative;
+  height:40vh;
+  width:80vw;
+  margin: auto;
+}
+#citation {
+  text-align: center;
+}
+
+
