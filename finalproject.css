@@ -1,4 +1,4 @@
-h1,h3 {
+h1,h3,h4 {
    text-align: center;
 }
 
@@ -8,9 +8,6 @@ h1,h3 {
   width:80vw;
   margin: auto;
 }
-#citation {
-   top: 95vh;
-  text-align: center;
-}
+
 
 
