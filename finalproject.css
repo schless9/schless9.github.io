@@ -9,6 +9,7 @@ h1,h3 {
   margin: auto;
 }
 #citation {
+   top: 95vh;
   text-align: center;
 }
 
