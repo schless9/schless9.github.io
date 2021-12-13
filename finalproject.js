@@ -146,7 +146,10 @@ xhr.responseType = "json"
 xhr.addEventListener("load", responseReceivedHandler);
 
 let start_query = "https://api.bls.gov/publicAPI/v2/timeseries/data/CEU"
-let end_query = "00000001?registrationkey=df39b7dfad9948b681a49ce499bcd0c7"
-xhr.open("GET", start_query + supersector_keys[i] + end_query);
+let end_query = "00000001"
+let api_key= ""
+//If you need more than two inputs in one day, please replace the star with your given API key. Please uncomment the next line. 
+//let api_key = "?registrationkey=*"
+xhr.open("GET", start_query + supersector_keys[i] + end_query+api_key);
 xhr.send();
 }
