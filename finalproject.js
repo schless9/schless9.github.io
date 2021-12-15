@@ -1,6 +1,5 @@
 let response_count = 0;
 
-// These are colors from chart.js utils
     const Super_Sectors = {
       "00":	'Total nonfarm',
       "05":	'Total private',
@@ -52,7 +51,6 @@ let response_count = 0;
 
     };
     let chart_color_keys = Object.keys (CHART_COLORS)
-//    console.dir(CHART_COLORS);
 
     const CHART_COLORS_50_Percent = {
       red: 'rgba(255, 99, 132, 0.5)',
@@ -78,15 +76,12 @@ let response_count = 0;
       gold: 'rgba(255, 215, 0, 0.5)',
       navy: 'rgba(0, 0, 128, 0.5)'
     };
-//    console.log(CHART_COLORS_50_Percent);
-//    end utils
 
     const data = {
       labels: [],
       datasets: []
     }
 
-  //  console.dir(data);
 
     const config = {
       type: 'line',
@@ -104,9 +99,7 @@ let response_count = 0;
         }
       }
     };
-//    console.log(config);
-//    console.dir(myChart);
-//    console.log("Ending");
+
 function responseReceivedHandler(){
   let gridline = {
     label: '',
@@ -149,7 +142,7 @@ let start_query = "https://api.bls.gov/publicAPI/v2/timeseries/data/CEU"
 let end_query = "00000001"
 let api_key= ""
 //If you need more than two inputs in one day, please replace the star with your given API key. Please uncomment the next line. 
-//let api_key = "?registrationkey=*"
-xhr.open("GET", start_query + supersector_keys[i] + end_query+api_key);
+//api_key = "?registrationkey=*"
+xhr.open("GET", start_query + supersector_keys[i] + end_query + api_key);
 xhr.send();
 }
